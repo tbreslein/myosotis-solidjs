@@ -25,19 +25,33 @@ npm run dev:android # run the android dev environment
 - [vite](https://vitejs.dev/): Bundling
 - [Capacitor](https://capacitorjs.com): building the app into an android app
 - [solid-router](https://github.com/solidjs/solid-router): Routing
+- [SUID](https://suid.io/): SolidJS material UI
+- [axios](https://github.com/axios/axios): HTTP client
+- [Zod](https://github.com/colinhacks/zod): typescript-frist schema validation
+- [Vitest](https://vitest.dev/): testing framework for vite apps
+- [Flipper](https://fbflipper.com/): Debugger
+- [Appium](https://appium.io/): End2End testing framework for native, hybrid and mobile web apps
 
 ## TODO
 
 - [ ] build a simple ToDo app
-- [ ] add deadlines to the ToDo items
-- [ ] add tags to the ToDo items
-- [ ] add a histoy for ToDos
-- [ ] add filters for the ToDo list (for deadlines, whether it's completed or not, deadline range, tags)
-- [ ] add additional types of ToDo items (oneshots, reocurring, maybe more?)
-- [ ] add those types to the filters
+  - [ ] declare the ToDo item class
+  - [ ] display a dummy todo
+  - [ ] declare the ToDo list class
+  - [ ] display a dummy todo list
+  - [ ] make it possible to add todos
+  - [ ] make it possible to remove todos
+  - [ ] make it possible to tick off todos
+- [ ] add some additional functionality to ToDos
+  - [ ] add deadlines to the ToDo items
+  - [ ] add tags to the ToDo items
+  - [ ] add a histoy for ToDos
+  - [ ] add filters for the ToDo list (for deadlines, whether it's completed or not, deadline range, tags)
+  - [ ] add additional types of ToDo items (oneshots, reocurring, maybe more?)
+  - [ ] add those types to the filters
 - [ ] add "users" & assigning ToDo items to users
-- [ ] add users to filters
-- [ ] add households
+  - [ ] add users to filters
+  - [ ] add households
 - [ ] add the backend?
 
 ## License
