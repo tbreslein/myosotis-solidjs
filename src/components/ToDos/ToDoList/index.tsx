@@ -7,16 +7,14 @@ interface ToDoListProps {
   todos: ToDo[];
 }
 
-const ToDoList: Component<ToDoListProps> = props => {
-  return (
-    <div>
-      <Stack spacing={2} justifyContent="center" alignItems="center" sx={{ py: 2 }}>
-        <For each={props.todos}>
-          {todo => <ToDoCard title={todo.title} description={todo.description} />}
-        </For>
-      </Stack>
-    </div>
-  );
-};
+const ToDoList: Component<ToDoListProps> = props => (
+  <div>
+    <Stack spacing={2} justifyContent="center" alignItems="center" sx={{ py: 2 }}>
+      <For each={props.todos}>
+        {todo => <ToDoCard title={todo.title} description={todo.description} />}
+      </For>
+    </Stack>
+  </div>
+);
 
 export default ToDoList;
