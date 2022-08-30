@@ -1,22 +1,24 @@
-import Card from "@suid/material/Card";
-import CardContent from "@suid/material/CardContent";
-import Typography from "@suid/material/Typography";
 import type { Component } from "solid-js";
+import Menubar from "./components/Menubar";
+import ToDoList from "./components/ToDos/ToDoList";
+import { ToDo } from "./types/ToDo";
+
+const DUMMY_TODOS: ToDo[] = [
+  {
+    title: "Do the dishes",
+    description: "DO THE DISHES",
+  },
+  {
+    title: "Feed the cats",
+    description: "they're hungry",
+  },
+];
 
 const App: Component = () => {
   return (
     <>
-      <h1>hello solidjs!!!</h1>
-      <Card sx={{ maxWidth: 345 }}>
-        <CardContent>
-          <Typography gutterBottom variant="h5" component="div">
-            Do the dishes
-          </Typography>
-          <Typography variant="body2" color="text.secondary">
-            I should really do the dishes.
-          </Typography>
-        </CardContent>
-      </Card>
+      <Menubar />
+      <ToDoList todos={DUMMY_TODOS} />
     </>
   );
 };
