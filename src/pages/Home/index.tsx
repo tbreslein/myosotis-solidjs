@@ -6,10 +6,12 @@ const DUMMY_TODOS: ToDo[] = [
   {
     title: "Do the dishes",
     description: "DO THE DISHES",
+    done: false,
   },
   {
     title: "Feed the cats",
     description: "they're hungry",
+    done: false,
   },
 ];
 

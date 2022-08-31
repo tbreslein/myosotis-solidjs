@@ -11,7 +11,7 @@ const ToDoList: Component<ToDoListProps> = props => (
   <div>
     <Stack spacing={2} justifyContent="center" alignItems="center" sx={{ py: 2 }}>
       <For each={props.todos}>
-        {todo => <ToDoCard title={todo.title} description={todo.description} />}
+        {todo => <ToDoCard title={todo.title} description={todo.description} done={todo.done} />}
       </For>
     </Stack>
   </div>
