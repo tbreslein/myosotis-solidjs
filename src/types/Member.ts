@@ -3,10 +3,8 @@ import { createUniqueId } from "solid-js";
 export class Member {
   readonly id: string;
   name: string;
-  isThatMe: boolean;
-  constructor(name: string, isThatMe: boolean) {
-    this.id = createUniqueId();
+  constructor(name: string, id = createUniqueId()) {
+    this.id = id;
     this.name = name;
-    this.isThatMe = isThatMe;
   }
 }
