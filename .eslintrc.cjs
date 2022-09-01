@@ -1,6 +1,7 @@
 module.exports = {
   extends: [
     "eslint:recommended",
+    "plugin:solid/typescript",
     "plugin:@typescript-eslint/recommended",
     "plugin:@typescript-eslint/recommended-requiring-type-checking",
   ],
@@ -22,7 +23,7 @@ module.exports = {
     es6: true,
     browser: true,
   },
-  plugins: ["@typescript-eslint"],
+  plugins: ["@typescript-eslint", "solid"],
   root: true,
   ignorePatterns: ["node_modules"],
 };

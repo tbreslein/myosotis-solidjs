@@ -6,14 +6,14 @@ Collaborative ToDo app, that allows multiple users to sync up a ToDo list betwee
 
 To build the app on your own, you will need `node`.
 I have not tested building it with a `node` version other than 16.6, so that at your own risk.
-You will also need some sort of emulator, though I have only tested it with android emulators because I'm not planning to put this on iphones.
+You will also need some sort of emulator, though I have only tested it with android emulators because I'm not planning to put this on iOS.
 It is wired up to run on android studio emulators currently, so you need to have that installed along with at least one integrated emulator.
 
 With that, you can run:
 
 ```bash
 npm i # install dependencies
-npx cap add andoid # add the android integration
+npx cap add android # add the android integration
 npm run build:dev # initial build
 npm run dev:android # run the android dev environment
 ```
@@ -26,8 +26,9 @@ npm run dev:android # run the android dev environment
 - [Capacitor](https://capacitorjs.com): building the app into an android app
 - [solid-router](https://github.com/solidjs/solid-router): Routing
 - [SUID](https://suid.io/): SolidJS material UI
+- [solid-toast](https://www.solid-toast.com/): Toasts for SolidJS
 - [axios](https://github.com/axios/axios): HTTP client
-- [Zod](https://github.com/colinhacks/zod): typescript-frist schema validation
+- [Zod](https://github.com/colinhacks/zod): typescript-first schema validation
 - [Vitest](https://vitest.dev/): testing framework for vite apps
 - [Flipper](https://fbflipper.com/): Debugger
 - [Appium](https://appium.io/): End2End testing framework for native, hybrid and mobile web apps
@@ -39,15 +40,15 @@ npm run dev:android # run the android dev environment
   - [ ] display a dummy todo
   - [ ] declare the ToDo list class
   - [ ] display a dummy todo list
-  - [ ] make it possible to add todos
-  - [ ] make it possible to remove todos
-  - [ ] make it possible to tick off todos
+  - [ ] make it possible to add ToDos
+  - [ ] make it possible to remove ToDos
+  - [ ] make it possible to tick off ToDos
 - [ ] add some additional functionality to ToDos
   - [ ] add deadlines to the ToDo items
   - [ ] add tags to the ToDo items
-  - [ ] add a histoy for ToDos
+  - [ ] add a history for ToDos
   - [ ] add filters for the ToDo list (for deadlines, whether it's completed or not, deadline range, tags)
-  - [ ] add additional types of ToDo items (oneshots, reocurring, maybe more?)
+  - [ ] add additional types of ToDo items (one-shots, recurring, maybe more?)
   - [ ] add those types to the filters
 - [ ] use the [mui theme creator](https://bareynol.github.io/mui-theme-creator/) to create themes
 - [ ] add "users" & assigning ToDo items to users
