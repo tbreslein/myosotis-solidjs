@@ -16,7 +16,7 @@ const ToDoCard: Component<ToDo> = props => (
         {props.title}
       </Typography>
       <Typography variant="body2" color="text.secondary">
-        {props.description}
+        {props.description}; {props.id}
       </Typography>
     </CardContent>
     <Checkbox checked={props.done} inputProps={{ "aria-label": "todo is done" }} />
