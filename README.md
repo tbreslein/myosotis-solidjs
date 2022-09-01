@@ -49,6 +49,7 @@ npm run dev:android # run the android dev environment
   - [ ] add filters for the ToDo list (for deadlines, whether it's completed or not, deadline range, tags)
   - [ ] add additional types of ToDo items (oneshots, reocurring, maybe more?)
   - [ ] add those types to the filters
+- [ ] use the [mui theme creator](https://bareynol.github.io/mui-theme-creator/) to create themes
 - [ ] add "users" & assigning ToDo items to users
   - [ ] add users to filters
   - [ ] add households
